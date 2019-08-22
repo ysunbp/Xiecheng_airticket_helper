@@ -120,7 +120,8 @@ def xiecheng(dcity, acity, date, price):
                     email_flag = True
 
             if (email_flag and a!=0):
-                yag = yagmail.SMTP(user = "********@qq.com", password = "************", host = "smtp.qq.com" )
+                yag = yagmail.SMTP(user = "********@qq.com", password = "************", host = "smtp.qq.com" )  #请使用自己的邮箱地址及授权码
+                                                                                                                #获取授权码的方法详见QQ邮箱关于授权码的介绍
                 yag.send(to = email_address, subject = '抢到票了', contents = '已查到票，快去抢吧')
 
 
